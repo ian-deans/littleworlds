@@ -12,7 +12,7 @@ const SignUp = props => (
             <Input s={6} label="Last Name" />
             <Input type="email" label="Email" s={12} />
             <Input type="password" label="password" s={12} />
-            <Input type="password" label="password" s={12} />
+            <Input type="password" label="please re-type password" s={12} />
         </Row>
     </Card>
     

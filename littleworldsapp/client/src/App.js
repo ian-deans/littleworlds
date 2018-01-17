@@ -16,7 +16,7 @@ class App extends Component {
     return (
         <div id="container">
             <Top imageUri='./img/logo.png'>My App</Top>
-            <SignUp imageUri='./img/thailand.png'></SignUp>
+            <SignUp></SignUp>
             <Bottom imageUri='./img/logo2.png'>
             </Bottom>
         </div>
