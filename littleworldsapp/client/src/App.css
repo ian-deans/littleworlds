@@ -1,0 +1,53 @@
+/*
+Font weights: 200, 200i, 400, 500, 700
+*/
+
+body {
+    display: flex;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 200;
+    min-height: 100vh;
+    flex-direction: column;
+    background:linear-gradient(124deg, #daecf3, #f2f2f2, #daecf3, #fff, #daecf3);
+    background-size: 100% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+    overflow-x: hidden;
+    font-family: 'Josefin Sans', sans-serif;  100, 300 
+    color: #fff;
+    font-size: 8px;
+/*
+    background: linear-gradient(rgba(160, 220, 230, 0.28), rgba(167, 157, 101, 0.37));
+    background-repeat: repeat;
+    background-attachment: fixed;
+*/
+}
+
+/* fix this! */
+li:hover {
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: #1d2929 !important;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+     0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+     0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}

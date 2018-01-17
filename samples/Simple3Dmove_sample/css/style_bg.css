@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Artifika);
+/*---------------------
+	 reset
+----------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p
+, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+}
+
+body {
+  background: url(../images/bg.png);
+  color: #333;
+    
+}
+
+/*---------------------
+ Simple3Dmove_Sample 
+----------------------- */
+
+#simple3D {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+#simple3D div {
+  min-height: 100vh;
+  width: 120%;
+}
+#simple3D div.dot {
+  background: url(../images/dot2.png);
+}
+#simple3D div.kinoco {
+  background: url(../images/kinoco.png);
+}
+#simple3D div.star {
+  background: url(../images/star.png);
+}

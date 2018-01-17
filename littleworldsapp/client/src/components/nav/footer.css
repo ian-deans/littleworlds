@@ -1,0 +1,31 @@
+.footer {
+    background-color: rgba(255, 255, 255, 0.31) !important;
+    color: #55716f !important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.footer p {
+    margin: 0 auto !important;
+    font-size: 12px;
+}
+
+.footer-copyright {
+    background-color: rgba(255, 255, 255, 0.31) !important;
+    color: #55716f !important;
+    text-align: center;
+    font-size: 12px;
+    height: 10px;
+}
+
+img {
+    height: 25px;
+}
+
+.footer .row {
+    text-align: center;
+    margin: 10px auto;
+}

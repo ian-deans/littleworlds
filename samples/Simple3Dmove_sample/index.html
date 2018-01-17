@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <title>jQuery Simples 3D Plugin Demo</title>
+        <link rel="stylesheet" href="css/style_bg.css" media="screen, projection, print">
+    </head>
+    <body>
+
+        <div id="container">
+            
+        <div id="simple3D">
+            <div class="dot"></div>
+
+            <div class="kinoco"></div>
+            <div class="star"></div>
+            
+        </div>	 
+
+        <div id="content">
+
+        </div><!-- fin_content -->
+
+        </div><!--container-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/jquery.simple3D.js"></script>
+        <script>
+            // jquery constructor implementation customized options
+            $("#simple3D").simple3D({
+                moveX:3,
+                moveY:3,
+                bgImage:true,
+                targetAll:true,
+                reverseX: true,
+                reverseY: true
+            });
+        </script>
+    </body>
+</html>
+
