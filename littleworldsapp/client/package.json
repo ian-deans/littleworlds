@@ -6,8 +6,10 @@
     "jquery": "^3.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-inlinesvg": "^0.7.4",
     "react-materialize": "^1.1.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "svg-to-jsx": "^0.0.21"
   },
   "scripts": {
     "start": "react-scripts start",
