@@ -1,4 +1,6 @@
 .mountains {
-    width: 200px !important;
-    background-color: red;
+    border: solid 1px black;
+    width: auto;
+    height: 200px;
+    margin: 10px 0px 100px 0px;
 }

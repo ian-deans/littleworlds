@@ -20,7 +20,6 @@ class App extends Component {
             <Top imageUri='./img/logo.png'>My App</Top>
             <SignUp></SignUp>
             <Island></Island>
-            <Background01 imageUri='./img/background01.svg'></Background01>
             <Bottom imageUri='./img/logo2.png'>
             </Bottom>
         </div>

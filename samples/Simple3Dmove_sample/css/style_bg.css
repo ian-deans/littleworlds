@@ -43,7 +43,7 @@ address, caption, cite, code, dfn, em, strong, th, var {
 }
 
 body {
-  background: url(../images/bg.png);
+/*  background: url(../images/bg.png);*/
   color: #333;
     
 }
@@ -55,19 +55,30 @@ body {
 #simple3D {
   position: absolute;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 #simple3D div {
   min-height: 100vh;
   width: 120%;
 }
-#simple3D div.dot {
-  background: url(../images/dot2.png);
+#simple3D div.mtn1 {
+  background: url(../images/mountains01.svg);
+  background-repeat: no-repeat;
+  background-size: 90vw;
 }
-#simple3D div.kinoco {
-  background: url(../images/kinoco.png);
+#simple3D div.mtn2 {
+  background: url(../images/mountains02.svg);
+  background-repeat: no-repeat;
+  background-size: 90vw;
 }
-#simple3D div.star {
-  background: url(../images/star.png);
+#simple3D div.sea {
+  background: url(../images/sea.svg);
+  background-repeat: repeat-x;
+  background-size: 90vw;
+}
+#simple3D div.sea-reflect {
+  background: url(../images/sea-reflect.svg);
+  background-repeat: no-repeat;
+  background-size: 90vw;
 }
