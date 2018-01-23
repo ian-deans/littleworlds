@@ -17,7 +17,11 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "express": "^4.15.4",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.1",
     "react-inlinesvg": "^0.7.4",
     "react-materialize": "^1.1.2"
   }

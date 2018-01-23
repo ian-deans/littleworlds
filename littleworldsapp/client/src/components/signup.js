@@ -2,10 +2,35 @@ import React from "react";
 import "./signup.css";
 import { Card, Row, Input } from 'react-materialize';
 
-const SignUp = props => (
+
+
+const SignUp = props => {
+    const handleSubmit = userObject => {
+        
+        // {/*actions={[<a href="http://localhost:3001/createuser"*/}
+        
+        fetch('http://localhost:3001/createuser', {
+            method: 'POST',
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            }),
+            body: JSON.stringify(userObject)
+        })
+    }
+    
+    const submitButton = 
+        <button onClick={() => handleSubmit({
+            name: 'Dood', 
+            password: 'funkymonkey'})}
+        >
+            Start Exploring
+        </button>
+    
+    return(
 
     <Card className="Modal"
-            actions={[<a href="#">Start Exploring</a>]}>
+        actions={submitButton}
+        >
         <Row>
             <p>Text</p>
             <Input s={6} label="First Name" />
@@ -16,6 +41,6 @@ const SignUp = props => (
         </Row>
     </Card>
     
-);
+)};
 
 export default SignUp;
