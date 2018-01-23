@@ -1,25 +1,19 @@
-// Dependencies
-var express = require("express");
-var bodyParser = require("body-parser");
-var mongoose = require("mongoose");
+const express = require("express");
+const path = require("path");
+const PORT = process.env.PORT || 3001;
+const app = express();
 
-// Require all models
-var db= require("./models");
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
-// Initialize Express
-var app = express();
+// Send every request to the React app
+// Define any API routes before this runs
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
-//Set mongoose to leverage built-in JavaScript ES6 Promises
-//Connect to the Mongo DB
-mongoose.Promse = Promise;
-mongoose.connect("mongodb://localhost/3002")
-
-// Set up a static folder (public) for our web app
-app.use(express.static("public"));
-
-app.get('/', (req, res) => res.send('Hello World!'))
-
-// Set the app to listen on port 3000
-app.listen(3002, function() {
-  console.log("App running on port 3000!");
+app.listen(PORT, function() {
+  console.log(`🌎 ==> Server now on port ${PORT}!`);
 });

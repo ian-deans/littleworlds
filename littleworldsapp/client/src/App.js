@@ -4,7 +4,7 @@ import Top from './components/nav/header';
 import Bottom from './components/nav/footer';
 import SignUp from './components/signup';
 import Island from './components/thailand';
-import Background01 from './components/thailand-bits/background01.js';
+import Background01 from './components/thailandStuff/background01.js';
 
 
 class App extends Component {

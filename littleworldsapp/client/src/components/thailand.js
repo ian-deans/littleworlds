@@ -1,6 +1,6 @@
 import React from "react";
 import "./thailand.css";
-import Background01 from "./thailand-bits/background01";
+import Background01 from "./thailandStuff/background01";
 
 const Island = props => (
     
