@@ -1,8 +1,12 @@
-const db = require('./index');
+const db = require('../index');
+const Schema = db.Schema
 
-const user = db.model('User', {
+const userSchema = new Schema({
     name: String,
-    password: String
-});
+    password: String,
+    googleId: String,
+})
 
-modules.export = user;
+const User = db.model('User', userSchema)
+
+module.exports = User;
